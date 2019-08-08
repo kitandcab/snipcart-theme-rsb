@@ -22,7 +22,7 @@ $_btn-size: 36px;
 .snip-btn {
     @include font-bold;
     background-color: palette(button, background);
-    border-radius: 3px;
+    border-radius: 0px;
     border: 0;
     color: palette(button, color);
     cursor: pointer;
@@ -32,7 +32,7 @@ $_btn-size: 36px;
     line-height: $_btn-size;
     outline: 0;
     padding: 0 1em;
-    text-transform: uppercase;
+    text-transform: initial;
 
     &:hover {
         background-color: palette(button, background--hover);

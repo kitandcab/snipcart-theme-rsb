@@ -7,72 +7,79 @@
     We also respect our BEM like notation and files architecture.
 */
 
+$white:#FFF;
+$black:#05050c;
+
+$grey-2:#f4f4f4;
+$grey-1:darken(#f4f4f4,8%);
+$grey:#7c7c7c;
+
 $palettes: (
     action: (
-        link: #999
+        link: $black
     ),
     button: (
-        background: #555,
-        background--highlight: #efe778,
-        background--hover: darken(#555, 10%),
+        background:$black,
+        background--highlight:$black,
+        background--hover: $grey,
         background--danger: #f10,
         background--danger-hover: darken(#f10, 10%),
-        background--highlight-hover: darken(#efe778, 10%),
-        color: #fff,
-        color--highlight: #222,
+        background--highlight-hover: $grey,
+        color: $white,
+        color--highlight: $white,
     ),
     error: (
         color: #f10,
-        text-color: #333,
+        text-color: $black,
         text-color--invert: #fff
     ),
     badge: (
         background--success: #76d443,
         background--error: #f10,
         background--warn: #efe778,
-        text--success: #333,
+        text--success: $black,
         text--error: #fff,
-        text--warn: #333
+        text--warn:$black
     ),
     flash: (
         background--error: #f10,
         background--success: #76d443,
         background--warning: #efe778,
-        background--confirm: #222,
-        border: #333,
-        color: #333,
+        background--confirm:$black,
+        border: $black,
+        color: $black,
         color--invert: #fff
     ),
     footer: (
-        background: #222,
+        background:$black,
         color: #555,
         color--highlight: #999
     ),
     form: (
         background: #fff,
-        border: #eee,
-        border--focus: #333,
-        color: #555,
-        color--highlight: #333,
-        label-color: #999
+        border: $grey,
+        border--focus: $black,
+        color: $black,
+        color--highlight: $black,
+        label-color:$black
     ),
     header: (
-        background: #222,
-        background--highlight: #111,
-        color: #fff,
-        label-color: #999
+        background: $white,
+        background--highlight:$white,
+        color:$black,
+        label-color:$black
     ),
     layout: (
         background: #fff,
         border: #eee,
-        close-color: #fff,
-        color: #999,
+        close-color: $black,
+        color: $black,
         content-background: #f8f8f8,
         content-border: #bbb,
-        loading-color: #333
+        loading-color:$black
     ),
     loader: (
-        background: #222,
+        background: $black,
         background--highlight: #efe778
     ),
     product: (
@@ -95,11 +102,11 @@ $palettes: (
         color--link: #999
     ),
     step: (
-        background: #ccc,
-        background--active: #fff,
-        border: #bbb,
-        color: #999,
-        color--active: #333
+        background: $black,
+        background--active: $white,
+        border: $white,
+        color: $white,
+        color--active: $black
     ),
     table: (
         background--highlight: #f8f8f8,

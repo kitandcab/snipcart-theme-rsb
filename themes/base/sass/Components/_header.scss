@@ -20,19 +20,44 @@ $_header-total-height: 38px;
 \*------------------------------------*/
 
 .snip-header {
-    @include font-bold;
+    // @include font-bold;
     background: palette(header, background);
     color: palette(header, color);
     padding: $padding-small;
     position: relative;
-    text-align: left;
-    text-transform: uppercase;
+    text-align: center;
+    text-transform: initial;
+    z-index:1;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding-left:20px;
+    padding-right:20px;
 
     @media #{$mq-medium} {
         color: palette(header, color);
         height: $_header-height;
-        padding: 0;
-        text-align: center;
+        // padding: 0;
+        // text-align: center;
+        text-align:right;
+    }
+
+    &:before {
+        content:'';
+        background:url('#{$imgpath}/rsb_logo.svg');
+        width:80px;
+        height:55px;
+        display:block;
+        margin:auto;
+        // position:relative;
+
+        @media #{$mq-medium} {
+            position:absolute;
+            left:24px;
+            top:0;
+            bottom:0;
+        }
     }
 }
 
@@ -84,11 +109,11 @@ $_header-total-height: 38px;
 
     // [2]
     &.js-show {
-        display: block;
+        // display: block;
     }
 
     @media #{$mq-medium} {
-        display: block;
+        // display: block;
         font-size: fontsize(header, large);
         left: 1.25em;
         line-height: $_header-height;
@@ -102,12 +127,17 @@ $_header-total-height: 38px;
     border-radius: 5px;
     display: inline-block;
     padding: .5em;
+    margin-top:15px;
 
     @media #{$mq-medium} {
         height: $_header-total-height;
         line-height: $_header-total-height;
         margin-top: 2.188em;
         padding: 0 .625em;
+    }
+
+    span {
+        font-weight:100;
     }
 }
 

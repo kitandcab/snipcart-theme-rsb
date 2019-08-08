@@ -3,3 +3,7 @@ node_modules
 snipcart.css
 snipcart.min.css
 *.orig
+.DS_Store
+themes/.DS_Store
+themes/base/.DS_Store
+themes/base/fonts/.DS_Store

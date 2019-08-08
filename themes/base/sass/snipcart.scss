@@ -57,7 +57,7 @@ body.snip-open {
 
 // Base layout
 .snip-layout {
-    background: rgba(123, 123, 123, .75);
+    background: rgba($white, .95);
     bottom: 0;
     color: palette(layout, color);
     font-family: $font-base;
@@ -68,7 +68,7 @@ body.snip-open {
     padding: 0;
     position: fixed;
     right: 0;
-    top: 0;
+    top: 0px;
     z-index: $_base-z-index;
 
     // Compound settings and reset
@@ -97,9 +97,24 @@ body.snip-open {
     @import "components/_discount.scss";
     @import "components/_badge.scss";
 
+    padding-top:128px;
+
+    @media #{$mq-medium} {
+        padding-top:105px;
+    }
+
     // Responsive
     @media #{$mq-large} {
         font-size: fontsize(reset, large);
-        padding: $_base-padding;
+        // padding: $_base-padding;
+        // padding-top:105px;
+    }
+
+    #snipcart-main-content {
+        padding:20px 60px 60px 60px;
+
+        @media screen and (max-width:500px) {
+            padding:20px 20px;
+        }
     }
 }

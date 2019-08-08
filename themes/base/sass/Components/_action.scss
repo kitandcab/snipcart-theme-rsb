@@ -18,8 +18,12 @@ $_action-border: 1px solid palette(layout, border);
 \*------------------------------------*/
 
 .snip-actions {
-    border-top: $_action-border;
+    // border-top: $_action-border;
     padding: $padding-small;
+
+    &:first-of-type {
+        border-top:solid 1px $black;
+    }
 
     // [1]
     @include clearfix;

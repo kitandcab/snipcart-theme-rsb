@@ -22,26 +22,70 @@ $_layout-content-border: 1px solid palette(layout, content-border);
 .snip-layout__main-container {
     background: palette(layout, background);
     margin: 0 auto;
-    max-width: 62.25em;
+    // max-width: 62.25em;
     position: relative;
+    max-width:100%;
+}
+
+%modal-close {
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    width:25px;
+    border-bottom:solid 1px $black;
+    display:block;
+    position:absolute;
+    height:0;
 }
 
 .snip-layout__close {
     color: palette(layout, close-color);
-    font-size: $_layout-close-font-size * 1.2;
+    // font-size: $_layout-close-font-size * 1.2;
     padding: .333em;
     padding: 0;
     position: absolute;
-    right: .417em;
+    // right: .417em;
     top: .1em;
     z-index: 2;
+    right:20px;
 
     @media #{$mq-medium} {
-        font-size: $_layout-close-font-size;
-        top: .208em;
+        // font-size: $_layout-close-font-size;
+        // top: .208em;
 
         &.js-hidden {
             display: none;
+        }
+    }
+
+    font-size:0;
+    // width:100%;
+    // background-color:$white;
+    position:fixed;
+    text-align:right;
+
+    .snip-ico--close {
+        padding:0px;
+        width:40px;
+        height:40px;
+        position:relative;
+        // top:0px;
+        // right:15px;
+        cursor:pointer;
+        z-index:1;
+        display:inline-block;
+
+        &:before {
+            content:'';
+            @extend %modal-close;
+            transform:rotate(-50deg);
+        }
+        &:after {
+            content:'';
+            @extend %modal-close;
+            transform:rotate(50deg);
         }
     }
 }
@@ -51,7 +95,7 @@ $_layout-content-border: 1px solid palette(layout, content-border);
     color: palette(layout, loading-color);
     padding: 5em 0;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: initial;
     margin-top: -0.3em;
 
 }
@@ -97,6 +141,6 @@ $_layout-content-border: 1px solid palette(layout, content-border);
 
 .snip-layout__subtitle {
     padding: 0 1em;
-    text-transform: uppercase;
+    text-transform: initial;
     font-size: 18px;
 }

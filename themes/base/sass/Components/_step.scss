@@ -20,7 +20,7 @@ $_steps-border: 1px solid palette(step, border);
 \*------------------------------------*/
 
 .snip-steps {
-    background: palette(step, background);
+    // background: palette(step, background);
     display: block;
     height: $_steps-height / 1.25;
 
@@ -47,7 +47,7 @@ $_steps-border: 1px solid palette(step, border);
 
 .snip-step__item {
     background: palette(step, background);
-    border-bottom: $_steps-border;
+    // border-bottom: $_steps-border;
     color: palette(step, color);
     cursor: pointer;
     display: table;
@@ -55,6 +55,7 @@ $_steps-border: 1px solid palette(step, border);
     height: inherit;
     // [1]
     user-select: none;
+
 
     @supports (display: flex) {
         display: flex;
@@ -82,33 +83,42 @@ $_steps-border: 1px solid palette(step, border);
 }
 
 .snip-step__nb {
+    // display:none;
     display: table-cell;
-    font-size: fontsize(step, icon) / 1.25;
+    font-size: fontsize(step, icon) / 2;
     padding: 0 .25em;
     text-align: center;
     vertical-align: middle;
 
+    // color: grey;
+
     @media #{$mq-medium} {
-        font-size: fontsize(step, icon);
+        font-size: fontsize(step, icon) / 2;
+        padding: 0 24px;
     }
 }
 
 .snip-step__label {
     display: none;
+    // display: table-cell;
 
     @media #{$mq-medium} {
-        @include font-bold;
+        // @include font-bold;
         display: table-cell;
         font-size: fontsize(step, small);
         line-height: 16px;
         padding-right: .5em;
         text-align: left;
-        text-transform: uppercase;
+        text-transform: initial;
         vertical-align: middle;
         width: 66.666666%;
+
+        // padding-left: 24px;
     }
 
     @media #{$mq-large} {
         padding-right: 1em;
+
+        // padding-left: 24px;
     }
 }

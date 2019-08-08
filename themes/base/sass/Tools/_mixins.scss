@@ -1,4 +1,6 @@
-﻿/**
+﻿$imgpath: "https://www.restaurantsatbains.com/images/";
+
+/**
     MIXINS
 
     [1]. Used to clear floating elements within a container
@@ -37,7 +39,7 @@ $_reset-form-transition: border .66s ease;
 
 @mixin input-reset {
     background: palette(form, background);
-    border-radius: 3px;
+    border-radius: 0px;
     border: 1px solid palette(form, border);
     box-sizing: border-box;
     color: palette(form, color);

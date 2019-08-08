@@ -42,6 +42,21 @@ $_notice-error--text-color: palette(static, color--highlight);
           }
         }
     }
+
+    // tr {
+    //     border-bottom:solid red 1px;
+
+    //     + tr {
+    //         // border-top: $_table-border;
+    //         border-bottom:solid blue 1px;
+    //     }
+    // }
+
+    // tr {
+    //     &:first-of-type {
+    //         border-bottom:solid 1px $black;
+    //     }
+    // }
 }
 
 .snip-table {
@@ -87,10 +102,12 @@ $_notice-error--text-color: palette(static, color--highlight);
             @include clearfix;
             padding: $padding-small 0;
             position: relative;
+            // border-top:solid red 1px;
 
-            + tr {
-                //border-top: $_table-border;
-            }
+            // + tr {
+            //     // border-top: $_table-border;
+            //     border-top:solid blue 1px;
+            // }
         }
 
         td {
@@ -107,12 +124,15 @@ $_notice-error--text-color: palette(static, color--highlight);
             display: block;
             padding: 0;
 
+            // border-top:solid 1px red;
+
             &:empty {
                 padding: 0;
             }
 
             ~ .snip-table__body {
-                border-top: $_table-border;
+                // border-top: $_table-border;
+                // border-top:solid 1px red;
 
                 &:empty {
                     border: 0;
@@ -136,7 +156,7 @@ $_notice-error--text-color: palette(static, color--highlight);
 .snip-table__header {
     font-size: fontsize(table, small);
     padding: 1em 2em;
-    text-transform: uppercase;
+    text-transform: initial;
 
     ~ .snip-table__header {
         border-top: $_table-border;
@@ -170,7 +190,7 @@ $_notice-error--text-color: palette(static, color--highlight);
     font-size: fontsize(table, base);
     color: palette(table, color--highlight);
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: initial;
 }
 
 .snip-table__cell--center {
@@ -193,8 +213,6 @@ $_notice-error--text-color: palette(static, color--highlight);
 
 .snip-table__cell--invalid {
     text-decoration: line-through;
-    font-weight: normal;
-    display: block;
 }
 
 .snip-table__cell--bold {
@@ -221,5 +239,24 @@ $_notice-error--text-color: palette(static, color--highlight);
         + .snip-table__small-col {
             border-left: $_table-border;
         }
+    }
+}
+
+// .snip-table__item {
+
+//     > td {
+
+//         &:first-child {
+//             display:block;
+//             width:100%;
+//         }
+//     }
+// }
+
+.snip-customfields {
+    
+
+    @media #{$mq-medium} {
+        width:40%;
     }
 }

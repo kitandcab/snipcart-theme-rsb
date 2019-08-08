@@ -46,7 +46,7 @@ $_qt-text-remove: "-";
     justify-content: center;
     color: palette(quantity-trigger, color);
     font-size: fontsize(quantity-trigger, x-large);
-    font-weight: 400;
+    // font-weight: 400;
     margin-top: -1.6px;
     line-height: 1.6;
     height: 1em;
@@ -70,7 +70,7 @@ $_qt-text-remove: "-";
     color: inherit;
     float: left;
     font-size: fontsize(quantity-trigger, large);
-    font-weight: 400;
+    // font-weight: 400;
     height: 1em;
     width: 1em;
 

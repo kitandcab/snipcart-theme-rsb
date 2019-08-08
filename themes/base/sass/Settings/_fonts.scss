@@ -4,16 +4,19 @@
     We don't want to load many fonts on your site so we stay classic.
     You can add your custom fonts here and/or define your own fonts family variables.
 */
-$font-base: Arial, sans-serif;
+// $font-base: Arial, sans-serif;
 
+$font-base: 'Roboto', sans-serif;
+
+$fontpath:'http://localhost:3000/';
 
 /**
     ICONS FONT
 */
 @font-face {
     font-family: "Snipcart";
-    src: url('fonts/snipcart/Snipcart.woff?94043836') format("woff"),
-         url('fonts/snipcart/Snipcart.ttf?94043836') format("truetype");
+    src: url('#{$fontpath}fonts/snipcart/Snipcart.woff?94043836') format("woff"),
+         url('#{$fontpath}fonts/snipcart/Snipcart.ttf?94043836') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -27,7 +30,7 @@ $font-base: Arial, sans-serif;
     - add your font-family. Ex: font-family: 'myFont-bold';
 */
 @mixin font-bold {
-    font-weight: 700;
+    font-weight: 100!important;
 }
 
 
@@ -56,12 +59,12 @@ $fontsize: (
     ),
     header: (
         small: 14px,
-        large: 30px
+        large: 18px
     ),
     product: (
         base: 14px,
-        large: 20px,
-        icon: 30px
+        large: 18px,
+        icon: 20px
     ),
     quantity-trigger: (
         large: 18px,

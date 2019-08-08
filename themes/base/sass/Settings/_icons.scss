@@ -18,7 +18,7 @@ $snip-ico--receipt: "\e802";
 $snip-ico--checklist: "\e801";
 $snip-ico--basket: "\e800";
 $snip-ico--check: "\e806";
-$snip-ico--close: "\e807";
+// $snip-ico--close: "\e807";
 
 
 /*------------------------------------*\
@@ -43,4 +43,4 @@ $snip-ico--close: "\e807";
 .snip-ico--checklist:before { content: $snip-ico--checklist; }
 .snip-ico--basket:before { content: $snip-ico--basket; }
 .snip-ico--check:before { content: $snip-ico--check; }
-.snip-ico--close:before { content: $snip-ico--close; }
+// .snip-ico--close:before { content: $snip-ico--close; }
