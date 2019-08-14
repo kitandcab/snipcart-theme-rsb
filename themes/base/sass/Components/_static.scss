@@ -33,6 +33,12 @@ $_static-border: 1px solid palette(static, border);
     text-transform: initial;
 }
 
+.snip-table__body--small .snip-static__title  {
+    @media #{$mq-large} {
+        text-align:right;
+    }
+}
+
 .snip-static__title--main {
     margin: .5em 1.429em 1em;
 }

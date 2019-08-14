@@ -170,7 +170,8 @@ $_notice-error--text-color: palette(static, color--highlight);
 }
 
 .snip-table__body--small {
-    background: palette(table, background--highlight);
+    // background: palette(table, background--highlight);
+    background:white;
 
     @media #{$mq-medium} {
         padding: .429em 1.429em .429em 2.857em;
