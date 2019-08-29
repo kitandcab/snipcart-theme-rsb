@@ -22,32 +22,32 @@ $palettes: (
         background:$black,
         background--highlight:$black,
         background--hover: $grey,
-        background--danger: #f10,
-        background--danger-hover: darken(#f10, 10%),
+        background--danger: #b22724,
+        background--danger-hover: darken(#b22724, 10%),
         background--highlight-hover: $grey,
         color: $white,
         color--highlight: $white,
     ),
     error: (
-        color: #f10,
+        color: #b22724,
         text-color: $black,
         text-color--invert: #fff
     ),
     badge: (
-        background--success: #76d443,
-        background--error: #f10,
+        background--success: #76af25,
+        background--error: #b22724,
         background--warn: #efe778,
-        text--success: $black,
+        text--success:  #fff,
         text--error: #fff,
         text--warn:$black
     ),
     flash: (
-        background--error: #f10,
-        background--success: #76d443,
+        background--error: #b22724,
+        background--success: #76af25,
         background--warning: #efe778,
         background--confirm:$black,
-        border: $black,
-        color: $black,
+        // border: $black,
+        color: #fff,
         color--invert: #fff
     ),
     footer: (
@@ -80,12 +80,12 @@ $palettes: (
     ),
     loader: (
         background: $black,
-        background--highlight: #efe778
+        background--highlight: rgba($black,0.3)
     ),
     product: (
         background: #f8f8f8,
         border: #eee,
-        color--error: #f10,
+        color--error: #b22724,
         color--highlight: #333
     ),
     quantity-trigger: (
@@ -112,7 +112,7 @@ $palettes: (
         background--highlight: #f8f8f8,
         border: #eee,
         color--highlight: #333,
-        color--success: #76d443
+        color--success: #76af25
     ),
     tooltip: (
         background: #ccc,
